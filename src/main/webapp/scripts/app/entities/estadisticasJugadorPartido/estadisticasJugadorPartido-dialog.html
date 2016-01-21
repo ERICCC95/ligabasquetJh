@@ -1,0 +1,63 @@
+
+<form name="editForm" role="form" novalidate ng-submit="save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="clear()">&times;</button>
+        <h4 class="modal-title" id="myEstadisticasJugadorPartidoLabel" translate="ligabasquetApp.estadisticasJugadorPartido.home.createOrEditLabel">Create or edit a EstadisticasJugadorPartido</h4>
+    </div>
+    <div class="modal-body">
+        <jh-alert-error></jh-alert-error>
+        <div class="form-group">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="estadisticasJugadorPartido.id" readonly>
+        </div>
+
+        <div class="form-group">
+            <label translate="ligabasquetApp.estadisticasJugadorPartido.canastas" for="field_canastas">Canastas</label>
+            <input type="number" class="form-control" name="canastas" id="field_canastas"
+                    ng-model="estadisticasJugadorPartido.canastas"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="ligabasquetApp.estadisticasJugadorPartido.asistencias" for="field_asistencias">Asistencias</label>
+            <input type="number" class="form-control" name="asistencias" id="field_asistencias"
+                    ng-model="estadisticasJugadorPartido.asistencias"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="ligabasquetApp.estadisticasJugadorPartido.faltas" for="field_faltas">Faltas</label>
+            <input type="number" class="form-control" name="faltas" id="field_faltas"
+                    ng-model="estadisticasJugadorPartido.faltas"
+                    >
+
+        </div>
+        <div class="form-group">
+            <label translate="ligabasquetApp.estadisticasJugadorPartido.jugador" for="field_jugador">jugador</label>
+            
+            <select class="form-control" id="field_jugador" name="jugador" ng-model="estadisticasJugadorPartido.jugador" ng-options="jugador as jugador.id for jugador in jugadors track by jugador.id">
+                <option value=""></option>
+            </select>
+            
+        </div>
+        <div class="form-group">
+            <label translate="ligabasquetApp.estadisticasJugadorPartido.partido" for="field_partido">partido</label>
+            
+            <select class="form-control" id="field_partido" name="partido" ng-model="estadisticasJugadorPartido.partido" ng-options="partido as partido.id for partido in partidos track by partido.id">
+                <option value=""></option>
+            </select>
+            
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || editForm.$submitted" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

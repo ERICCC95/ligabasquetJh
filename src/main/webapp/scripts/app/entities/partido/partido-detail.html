@@ -1,0 +1,54 @@
+
+<div>
+    <h2><span translate="ligabasquetApp.partido.detail.title">Partido</span> {{partido.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th translate="entity.detail.field">Field</th>
+                <th translate="entity.detail.value">Value</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <span translate="ligabasquetApp.partido.fecha">Fecha</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{partido.fecha}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="ligabasquetApp.partido.arbitro">arbitro</span>
+                </td>
+                <td>
+                    <a class="form-control-static" ui-sref="arbitro.detail({id:partido.arbitro.id})">{{partido.arbitro.id}}</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="ligabasquetApp.partido.equipoV">equipoV</span>
+                </td>
+                <td>
+                    <a class="form-control-static" ui-sref="equipo.detail({id:partido.equipoV.id})">{{partido.equipoV.id}}</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="ligabasquetApp.partido.equipoL">equipoL</span>
+                </td>
+                <td>
+                    <a class="form-control-static" ui-sref="equipo.detail({id:partido.equipoL.id})">{{partido.equipoL.id}}</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

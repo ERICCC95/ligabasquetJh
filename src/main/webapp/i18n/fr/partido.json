@@ -1,0 +1,23 @@
+{
+    "ligabasquetApp": {
+        "partido" : {
+            "home": {
+                "title": "Partidos",
+                "createLabel": "Créer un nouveau Partido",
+                "createOrEditLabel": "Créer ou éditer un Partido"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Partido {{ id }} ?"
+            },
+            "detail": {
+                "title": "Partido"
+            },
+            "fecha": "Fecha",
+            "arbitro": "Arbitro",
+            "equipoV": "EquipoV",
+            "equipoL": "EquipoL",
+            "partido": "Partido"
+        }
+    }
+}
+

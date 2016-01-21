@@ -1,0 +1,23 @@
+{
+    "ligabasquetApp": {
+        "estadisticasJugadorPartido" : {
+            "home": {
+                "title": "EstadisticasJugadorPartidos",
+                "createLabel": "Créer un nouveau EstadisticasJugadorPartido",
+                "createOrEditLabel": "Créer ou éditer un EstadisticasJugadorPartido"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le EstadisticasJugadorPartido {{ id }} ?"
+            },
+            "detail": {
+                "title": "EstadisticasJugadorPartido"
+            },
+            "canastas": "Canastas",
+            "asistencias": "Asistencias",
+            "faltas": "Faltas",
+            "jugador": "Jugador",
+            "partido": "Partido"
+        }
+    }
+}
+

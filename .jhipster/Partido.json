@@ -1,0 +1,42 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "arbitro",
+            "otherEntityName": "arbitro",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipId": 2,
+            "relationshipName": "equipoV",
+            "otherEntityName": "equipo",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipId": 3,
+            "relationshipName": "equipoL",
+            "otherEntityName": "equipo",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipId": 4,
+            "relationshipName": "partido",
+            "otherEntityName": "estadisticasjugadorpartido",
+            "relationshipType": "mone-to-many",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "fecha",
+            "fieldType": "DateTime"
+        }
+    ],
+    "changelogDate": "20151210181127",
+    "dto": "no",
+    "pagination": "pagination"
+}

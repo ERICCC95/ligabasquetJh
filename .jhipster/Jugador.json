@@ -1,0 +1,51 @@
+{
+    "relationships": [   {
+        "relationshipId": 1,
+        "relationshipName": "jugador",
+        "otherEntityName": "equipo",
+        "relationshipType": "many-to-one",
+        "otherEntityField": "id"
+    },
+        {
+            "relationshipId": 2,
+            "relationshipName": "jugador",
+            "otherEntityName": "estadisticasjugadorpartido",
+            "relationshipType": "one-to-many",
+            "otherEntityField": "id"
+        }],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "nombre",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "posicioncampo",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "canastasTotales",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "asistenciasTotales",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldId": 5,
+            "fieldName": "rebotesTotales",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldId": 6,
+            "fieldName": "fechaNacimiento",
+            "fieldType": "DateTime"
+        }
+    ],
+    "changelogDate": "20151210180148",
+    "dto": "no",
+    "pagination": "pagination"
+}
