@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="equipos">
+
+    <table border="1">
+        <tr><td>nombre</td><td>ciudad</td><td>fecha</td></tr>
+        <tr ng-repeat="x in names">
+            <td>{{ x.nombre }}</td>
+            <td>{{ x.localidad }}</td>
+            <td>{{ x.fecha }}</td>
+        </tr>
+    </table>
+
+</div>
+
+<script>
+    var app = angular.module('myApp', []);
+    app.controller('equipos', function($scope, $http) {
+        $http.get("http://127.0.1.1:8080/api/equipos").then(function (response) {
+            $scope.names = response.data;
+        });
+    });
+</script>
+
+</body>
+</html>
